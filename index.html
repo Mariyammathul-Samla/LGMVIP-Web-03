@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="header">
+        <h2>Student Enrollment Form</h2>
+    </div>
+    <div id="container">
+
+        <div id="form-container">
+            <h2>Registration Form</h2>
+            <form id="registration-form" class="form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="website">Website:</label>
+                    <input type="text" id="website" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image Link:</label>
+                    <input type="text" id="image">
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="html" value="HTML">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" id="css" value="CSS">
+                        <label for="css">CSS</label>
+                        <input type="checkbox" id="js" value="JavaScript">
+                        <label for="js">JavaScript</label>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" id="enroll" class="btn-grad">Enroll</button>
+                    <button type="button" id="clear" class="btn-grad">Clear</button>
+                </div>
+            </form>
+
+        </div>
+        <div id="enrolled-container">
+            <h2>Enrolled Students</h2>
+            <table class="student-table" id="enrolled-list"></table>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

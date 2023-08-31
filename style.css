@@ -1,0 +1,142 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0c0c;
+    color: #ccc;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #1e1c1c 0%, #4b0a0c 51%, #2c0f0e 100%);
+
+}
+
+.header {
+    font-size: large;
+    letter-spacing: 1pc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: rgba(15, 15, 15, 0.3) solid;
+}
+
+#container {
+
+    display: flex;
+    width: 80%;
+}
+
+#form-container {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+#enrolled-container {
+    flex: 1;
+    padding: 20px;
+}
+
+#form-container h2,
+#enrolled-container h2 {
+    margin-top: 0;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: black;
+}
+
+.student-table th,
+.student-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.student-image-cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 5px;
+}
+
+.student-image-cell img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form {
+    width: 60%;
+    background-image: linear-gradient(to right, #5a1d1a 0%, #b31217 51%, #4e1a18 100%);
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 40px;
+    box-shadow: 0 0 20px rgba(15, 15, 15, 0.719);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group label,
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #0c0c0c;
+    border-radius: 10px;
+    display: inline;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
